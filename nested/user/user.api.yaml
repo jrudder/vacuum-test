@@ -1,0 +1,14 @@
+User:
+  get:
+    tags: ["user"]
+    description: This can only be done by the logged in user.
+    responses:
+      "200":
+        description: successful operation
+        content:
+          'application/json':
+            schema:
+              $ref: 'user.model.yaml#/User'
+      "400":
+        description: operation failed
+        content: {}

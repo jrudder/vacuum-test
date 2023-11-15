@@ -1,0 +1,16 @@
+{
+  "name": "vacuum-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "vacuum:flat": "vacuum lint --details -p flat flat/api.yaml",
+    "vacuum:nested": "vacuum lint --details -p nested nested/api.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@quobix/vacuum": "^0.4.5"
+  }
+}
